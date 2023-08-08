@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+<body>
+    <h1>Песенка про елочку</h1>
+    <br>В лесу родилась <strong>елочка</strong>
+    <br>В лесу она росла
+    <br><u>Зимой и летом</u> стройная,
+    <br>Зеленая была.
+    <p>
+    метель ей пела песенку:
+    <br>&nbsp;&nbsp;&nbsp;- "<em>Спи <strong>елочка</strong>, бай-бай!</em>"
+    <br>Мороз снежком укутывал:
+    <br>&nbsp;&nbsp;&nbsp;- "<em>Смотри, не замерзай!</em>"
+    <h2>Теперь я умею</h2>
+    <ol>
+        <li>Использовать заголовочные теги h1, h2 etc.</li>
+        <li>выделять текст жирным через <strong>strong</strong></li>
+    </ol>
+    <h3>А также</h3>
+    <ul>
+        <li>Выделять текст наклонным через <em>em</em></li>
+        <li>Использовать разрывы строк <strong>br</strong> и абзацы <strong>p</strong></li>
+    </ul>
+    <div class="pharagraph1 bordered">
+        Где-то вдали от ненужного смысла<br>
+        <span class="verb bordered">Плаваю</span> в бездне застывшего дня<br>
+        И здесь так тихо и <span class="verb bordered">плавают</span> рыбы<br>
+        Им все равно на меня<br>
+    </div>
+    <p>
+    <div class="pharagraph2 bordered">
+        Все <span class="name"">корабли</span>, почему-то, <span class="verb bordered">боятся</span><br>
+        Я их не <span class="verb bordered">трону</span> ну почему<br>
+        Время идёт я боюсь потеряться<br>
+        Я просто <span class="verb bordered">таю</span> и <span class="verb bordered">тону</span><br>
+    </div>
+    <p>
+    <div class="pharagraph3 bordered">
+        Мои осколки я так <span class="verb bordered">скучаю</span><br>
+        Можно им лучше, чем было со мной<br>
+        Все <span class="verb bordered">плывут</span> мимо, а здесь так красиво<br>
+        И я <span class="verb bordered">тону</span> в этом <span class="name">боже</span> мой<br>
+    </div>
+    <style>
+        .pharagraph1{
+            width: 300px;
+            text-align: center;
+            font-weight: bold;
+            
+            background: #afe0ff;
+            transition: all 0.3s;
+        }
+        .pharagraph1:hover {
+            background: rgb(60, 78, 85);
+            cursor: crosshair;
+            border-width: 1px; /* меняю ширину границы, да можно только ширину указать */
+            padding: 30px; /* меняю отступы от границы */
+            
+        }
+        .pharagraph1.bordered{
+            margin: 16px 0;
+            border-width: 4px;
+            
+        }
+        .pharagraph2{
+            width: 500px;
+            text-align: right;
+            font-weight: bold;
+           
+            background: #57bfff;
+            transition: all 0.3s;
+        }
+        .pharagraph2:hover {
+            background: rgb(3, 57, 79);
+            cursor: crosshair;
+            border-width: 1px; /* меняю ширину границы, да можно только ширину указать */
+            padding: 30px; /* меняю отступы от границы */
+            
+        }
+        .pharagraph2.bordered{
+            margin: 16px 0;
+            border-width: 6px;
+            border-color: #ff0000;
+        }
+        .pharagraph3{
+            width: 50%;
+            box-sizing: border-box;
+            text-align: center;
+            font-weight: bold;
+            
+            background: linear-gradient(90deg, #00aeff, #ffa6f3);
+            transition: all 0.3s;
+        }
+        .pharagraph3:hover {
+            background: linear-gradient(90deg, #003148, #82577c);
+            cursor: crosshair;
+            border-width: 1px; /* меняю ширину границы, да можно только ширину указать */
+            padding: 30px 30px; /* меняю отступы от границы */
+            
+        }
+        .pharagraph3.bordered{
+            margin: 10px 0;
+            border-width: 4px;
+            border-color: #2bff00;
+        }
+        .verb{
+            background: red;
+            transition: all 0.3s;
+        }
+        .pharagraph1:hover .verb:hover {
+            background: rgb(245, 137, 137);
+            cursor: zoom-in;
+            border-width: 4px; /* меняю ширину границы, да можно только ширину указать */
+            padding: 6px 6px; /* меняю отступы от границы */
+            box-shadow: 0 10px 60px white; /* делаю тень белой и побольше, получается иллюзия свечения */
+            display: inline-block;
+            
+        }
+        .pharagraph2:hover .verb:hover {
+            background: rgb(236, 219, 133);
+            cursor: zoom-in;
+            border-width: 4px; /* меняю ширину границы, да можно только ширину указать */
+            padding: 6px 6px; /* меняю отступы от границы */
+            box-shadow: 0 10px 60px white; /* делаю тень белой и побольше, получается иллюзия свечения */
+            display: inline-block;
+            
+        }
+        .pharagraph3:hover .verb:hover {
+            background: rgb(162, 137, 245);
+            cursor: zoom-in;
+            border-width: 4px; /* меняю ширину границы, да можно только ширину указать */
+            padding: 6px 6px; /* меняю отступы от границы */
+            box-shadow: 0 10px 60px white; /* делаю тень белой и побольше, получается иллюзия свечения */
+            display: inline-block;
+            
+        }
+        .name{
+            background: linear-gradient(90deg, #2bff00, #ff0000);
+            display: inline-block;
+            padding: 8px;
+            transition: all 0.3s;
+        }
+        .name:hover {
+            background: rgb(51, 255, 0);
+            cursor: zoom-in;
+            border-width: 4px; /* меняю ширину границы, да можно только ширину указать */
+            padding: 6px; /* меняю отступы от границы */
+            box-shadow: 0 10px 60px white; /* делаю тень белой и побольше, получается иллюзия свечения */
+            
+        }
+        .bordered {
+        border: 2px dashed black;
+        display: inline-block; 
+        margin: 2px; 
+        padding: 0 4px;
+        border-radius: 8px;
+        box-shadow: 0 0 8px grey;
+        }
+        .pharagraph1 .verb{
+            background-color: #2bff00;
+        }
+        .pharagraph2 .verb{
+            background-color: #df26d5;
+        }
+        .pharagraph3 .verb{
+            background-color: #534e0c;
+        }
+        .pharagraph1:hover .verb{
+            background-color: #c9ffbe;
+        }
+        .pharagraph2:hover .verb{
+            background-color: #c9ffbe;
+        }
+        .pharagraph3:hover .verb{
+            background-color: #c9ffbe;
+        }
+    </style>
+    <div class="row">
+        <div class="block">
+            тут собачка живет 
+            <i class="fas fa-dog  fa-2x"></i>
+        </div>
+    
+        <div class="block" style="flex-grow: 2; text-align: center;">
+            <i class="fas fa-cat  fa-2x"></i>
+            <i class="fas fa-cat  fa-2x"></i>
+            <i class="fas fa-cat  fa-2x"></i>
+        </div>
+    
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fas fa-kiwi-bird fa-2x"></i>
+            дом киви
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fas fa-2x fa-crow"></i>
+            ворона
+        </div>
+        <div class="block" style="flex-grow: 3; text-align: center;">
+            <i class="fas fa-2x fa-dog"></i>
+            <i class="fas fa-2x fa-dog"></i>
+        </div>
+
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fas fa-2x fa-dove"></i>
+            голубь
+        </div>
+    
+        <div class="block" style="flex-grow: 1; ">
+            <i class="fas fa-2x fa-horse"></i>
+            лошадка
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fas fa-2x fa-frog"></i>
+        </div>
+
+        <div class="block fish" style="flex-grow: 2;">
+            <i class="fas fa-2x fa-fish"></i>
+        </div>
+
+        <div class="block fish" style="flex-grow: 2;">
+            <i class="fas fa-2x fa-fish"></i>
+        </div>
+
+        <div class="block fish" style="flex-grow: 2;">
+            <i class="fas fa-2x fa-fish"></i>
+        </div>
+    
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fas fa-2x fa-frog"></i>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="block tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fas fa-2x fa-tree"></i>
+        </div>
+
+        <div class="block tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fas fa-2x fa-tree"></i>
+        </div>
+
+        <div class="block tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fas fa-2x fa-tree"></i>
+        </div>
+
+        <div class="block tree" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fas fa-2x fa-tree"></i>
+        </div>
+    
+        <div class="block" style="flex-grow: 3; text-align: center;">
+            <i class="fas fa-2x fa-crow"></i>
+        </div>
+    </div>
+
+    <style>
+        .block {
+            border: 1px solid black;
+            margin-bottom: 0.5rem;
+            flex-grow: 1;
+            margin: 0.25rem; /* оступы вокруг блоков */
+            padding: 0.5rem; /* отступы внутри блоков */
+            flex-basis: 0;
+        }
+        .row {
+            display: flex;
+        }
+        .fish{
+            background-color: aqua;
+            text-align: center;
+        }
+        .tree{
+            background-color: rgb(75, 255, 126);
+            text-align: center;
+        }
+    </style>
+
+    <div style="display: flex;">
+        <div class="column" style="height: 200px; background-color: yellow; align-items: flex-end; flex-grow: 1; justify-content: flex-end;">
+            <div class="block1">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+        </div>
+        <div class="column" style="height: 200px; background-color: yellow; align-items: flex-end; flex-grow: 1; justify-content: space-evenly;">
+            <div class="block1">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+            <div class="block1"">
+                <i class="fas fa-2x fa-kiwi-bird"></i>
+            </div>
+        </div>
+        <div class="column" style="height: 200px; background-color: yellow; align-items: flex-start; flex-grow: 1; justify-content: space-evenly;">
+            <div class="block1"">
+                <i class="fas fa-2x fa-cat"></i>
+            </div>
+
+            <div class="block1"">
+                <i class="fas fa-2x fa-kiwi-bird"></i>
+            </div>
+        </div>
+        <div class="column" style="height: 200px; background-color: yellow; align-items: flex-start; flex-grow: 1; justify-content: flex-end;">
+            <div class="block1">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+            <div class="block1"">
+                <i class="fas fa-2x fa-cat"></i>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex;">
+       
+        <div class="column" style="height: 200px; background-color: yellow; align-items: flex-end; flex-grow: 1; justify-content: space-evenly;">
+            <div class="block1">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+            <div class="block1"">
+                <i class="fas fa-2x fa-kiwi-bird"></i>
+            </div>
+            <div class="block1"">
+                <i class="fas fa-2x fa-cat"></i>
+            </div>
+        </div>
+        <div class="column" style="height: 200px; flex-basis: 432px; background-color: yellow; align-items: center; flex-grow: 1; justify-content: center;">
+            <div class="block1">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+            <div class="block1"">
+                <i class="fas fa-2x fa-cat"></i>
+            </div>
+        </div>
+        <div class="column" style="height: 200px; background-color: yellow; align-items: flex-start; flex-grow: 1; justify-content: flex-start;">
+            <div class="block1">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex;">
+        <div class="column" style="height: 200px; background-color: yellow; align-items: flex-end; flex-basis: 200px; justify-content: flex-start;">
+            <div class="block1">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+        </div>
+        <div class="column" style="height: 200px; background-color: yellow; align-items: stretch; flex-basis: 200px; justify-content: flex-start;">
+            <div class="block1">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+            <div class="block1"">
+                <i class="fas fa-2x fa-cat"></i>
+            </div>  
+        </div>
+        <div class="column" style="height: 200px; background-color: yellow; align-items: stretch; flex-basis: 200px; justify-content: space-evenly;">
+            <div class="block1">
+                <i class="fas fa-2x fa-dog"></i>
+            </div>
+            <div class="block1"">
+                <i class="fas fa-2x fa-kiwi-bird"></i>
+            </div>
+            <div class="block1"">
+                <i class="fas fa-2x fa-cat"></i>
+            </div>
+        </div>
+        <div class="column" style="height: 200px; background-color: yellow; align-items: stretch; flex-basis: 200px; justify-content: center;">
+            <div class="block1"">
+                <i class="fas fa-2x fa-cat"></i>
+            </div>
+            <div class="block1"">
+                <i class="fas fa-2x fa-kiwi-bird"></i>
+            </div>
+        </div>
+    </div>
+
+
+<style>
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+	
+    .block1 {
+        border: 1px solid black;
+        margin: 0.25em;
+        padding: 0.5em;
+        
+    }
+</style>
+    
+</body>
+</html>
